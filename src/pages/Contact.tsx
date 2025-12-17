@@ -256,29 +256,6 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Social Links */}
-              <Card className="bg-white">
-                <CardContent className="p-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">Connect With Us</h3>
-                  <div className="flex space-x-4">
-                    <a 
-                      href="#" 
-                      className="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition-colors"
-                      title="LinkedIn"
-                    >
-                      <Linkedin className="h-6 w-6" />
-                    </a>
-                    <a 
-                      href="#" 
-                      className="bg-gray-100 p-3 rounded-full text-gray-600 hover:bg-gray-200 transition-colors"
-                      title="GitHub"
-                    >
-                      <Github className="h-6 w-6" />
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>

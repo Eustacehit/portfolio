@@ -24,15 +24,15 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Shaniz Hassan",
       content: "Websreal transformed our online presence completely. Our website traffic increased by 200% within the first month!"
     },
     {
-      name: "Michael Chen",
+      name: "Michael Parte",
       content: "The team delivered beyond our expectations. Professional, fast, and the results speak for themselves."
     },
     {
-      name: "Emily Rodriguez",
+      name: "Emily Kipkoech",
       content: "Best investment we made for our business. The website is beautiful and our sales have doubled."
     },
     {
@@ -40,21 +40,13 @@ const Index = () => {
       content: "Exceptional service from start to finish. They understood our vision and brought it to life perfectly."
     },
     {
-      name: "Lisa Anderson",
+      name: "Lissa O",
       content: "Working with Websreal was a game-changer. Their attention to detail is unmatched."
     },
     {
-      name: "James Wilson",
-      content: "Highly recommend! They delivered a stunning e-commerce site that our customers love."
-    },
-    {
-      name: "Amanda Foster",
+      name: "Bentah Wahome",
       content: "The team went above and beyond. Our new site is fast, beautiful, and converts like crazy."
     },
-    {
-      name: "Robert Kim",
-      content: "Professional, responsive, and talented. Couldn't ask for a better web development partner."
-    }
   ];
 
   const nextTestimonial = useCallback(() => {
@@ -211,15 +203,15 @@ const Index = () => {
                 Led by Eustace Edwin with 3+ years of expertise and a dedicated team of software developers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: '1.2s' }}>
-                <Link to="/contact">
-                  <Button size="lg" className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:shadow-blue-500/30 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
-                    Get Your Website Today
+                <a href="https://wa.me/254759719689" target="_blank" rel="noopener noreferrer">
+                  <Button size="lg" className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/30 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                    💬 Chat on WhatsApp
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                   </Button>
-                </Link>
-                <Link to="/portfolio">
+                </a>
+                <Link to="/contact">
                   <Button variant="outline" size="lg" className="px-8 py-4 text-lg font-semibold rounded-xl border-2 border-white/50 text-white hover:bg-white hover:text-blue-600 transition-all duration-500 backdrop-blur-sm hover:scale-105">
-                    View Our Work
+                    Get Your Website Today
                   </Button>
                 </Link>
               </div>
