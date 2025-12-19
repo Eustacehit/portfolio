@@ -1,9 +1,13 @@
 
 import React, { lazy, Suspense, useEffect, useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowRight, Code, Smartphone, ShoppingCart, Zap, Shield, Rocket, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import { ArrowRight, Code, Smartphone, ShoppingCart, Zap, Shield, Rocket, ChevronLeft, ChevronRight, Quote, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Textarea } from '@/components/ui/textarea';
+import { Input } from '@/components/ui/input';
+import { useToast } from '@/hooks/use-toast';
 import developerHero from '@/assets/developer-hero.png';
 
 // Lazy load components for better performance
@@ -12,6 +16,7 @@ const Footer = lazy(() => import('@/components/Footer'));
 
 const Index = () => {
   const navigate = useNavigate();
+  const { toast } = useToast();
   const [isVisible, setIsVisible] = useState(false);
   const [statsVisible, setStatsVisible] = useState(false);
   const [servicesVisible, setServicesVisible] = useState(false);
@@ -20,7 +25,32 @@ const Index = () => {
   const [showCursor, setShowCursor] = useState(true);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [testimonialsVisible, setTestimonialsVisible] = useState(false);
+  const [joinDialogOpen, setJoinDialogOpen] = useState(false);
+  const [developerName, setDeveloperName] = useState('');
+  const [developerSkills, setDeveloperSkills] = useState('');
   const fullText = "Professional Web Development";
+
+  const handleJoinSubmit = () => {
+    if (!developerName.trim() || !developerSkills.trim()) {
+      toast({
+        title: "Please fill in all fields",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    const message = encodeURIComponent(`🚀 Developer Application\n\nName: ${developerName}\n\nSkills: ${developerSkills}`);
+    window.open(`https://wa.me/254759719689?text=${message}`, '_blank');
+    
+    setJoinDialogOpen(false);
+    setDeveloperName('');
+    setDeveloperSkills('');
+    
+    toast({
+      title: "Application Sent!",
+      description: "We will respond within 72 hours."
+    });
+  };
 
   const testimonials = [
     {
@@ -202,7 +232,7 @@ const Index = () => {
                 Transform your business with stunning, high-performance websites that drive results. 
                 Led by Eustace Edwin with 3+ years of expertise and a dedicated team of software developers.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: '1.2s' }}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in flex-wrap" style={{ animationDelay: '1.2s' }}>
                 <a href="https://wa.me/254759719689" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:shadow-green-500/30 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                     💬 Chat on WhatsApp
@@ -214,6 +244,44 @@ const Index = () => {
                     Get Your Website Today
                   </Button>
                 </Link>
+                <Dialog open={joinDialogOpen} onOpenChange={setJoinDialogOpen}>
+                  <DialogTrigger asChild>
+                    <Button size="lg" className="group bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl hover:shadow-purple-500/30 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
+                      <Users className="mr-2 h-5 w-5" />
+                      Join Our Team
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="sm:max-w-md">
+                    <DialogHeader>
+                      <DialogTitle className="text-2xl font-bold">Join Our Developer Team</DialogTitle>
+                    </DialogHeader>
+                    <div className="space-y-4 mt-4">
+                      <div>
+                        <label className="text-sm font-medium mb-2 block">Your Name</label>
+                        <Input 
+                          placeholder="Enter your name" 
+                          value={developerName}
+                          onChange={(e) => setDeveloperName(e.target.value)}
+                        />
+                      </div>
+                      <div>
+                        <label className="text-sm font-medium mb-2 block">What are you best at?</label>
+                        <Textarea 
+                          placeholder="e.g., React, Node.js, Python, Mobile Development, UI/UX Design..." 
+                          value={developerSkills}
+                          onChange={(e) => setDeveloperSkills(e.target.value)}
+                          className="min-h-[120px]"
+                        />
+                      </div>
+                      <Button 
+                        onClick={handleJoinSubmit} 
+                        className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+                      >
+                        Send Application
+                      </Button>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
             <div className={`flex justify-center px-4 sm:px-0 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}>
