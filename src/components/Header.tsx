@@ -43,7 +43,7 @@ const Header = () => {
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
               <Code className="h-6 w-6 text-white" />
             </div>
-            <span className="text-gray-900">Websreal</span>
+            <span className="text-gray-900">Eustace Edwin</span>
           </Link>
 
           {/* Desktop Navigation */}

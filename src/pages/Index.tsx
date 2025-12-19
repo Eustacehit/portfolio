@@ -25,7 +25,7 @@ const Index = () => {
   const testimonials = [
     {
       name: "Shaniz Hassan",
-      content: "Websreal transformed our online presence completely. Our website traffic increased by 200% within the first month!"
+      content: "Eustace transformed our online presence completely. Our website traffic increased by 200% within the first month!"
     },
     {
       name: "Michael Parte",
@@ -41,7 +41,7 @@ const Index = () => {
     },
     {
       name: "Lissa O",
-      content: "Working with Websreal was a game-changer. Their attention to detail is unmatched."
+      content: "Working with Edwin's team was a game-changer. Their attention to detail is unmatched."
     },
     {
       name: "Bentah Wahome",

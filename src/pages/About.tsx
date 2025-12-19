@@ -39,7 +39,7 @@ const About = () => {
       <section className="pt-32 pb-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">About Websreal</h1>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">About the team</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We're a passionate team of web developers dedicated to creating exceptional digital experiences 
               that drive business growth and success.
@@ -62,7 +62,7 @@ const About = () => {
                 creating beautiful, functional websites that make a real difference for businesses.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Leading the Websreal team, I've successfully delivered 50+ projects ranging from simple 
+                Leading the team, I've successfully delivered 50+ projects ranging from simple 
                 business websites to complex e-commerce platforms. Every project is an opportunity to 
                 push boundaries and deliver exceptional value to our clients.
               </p>
@@ -144,7 +144,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Websreal?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Why Choose Us?</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
