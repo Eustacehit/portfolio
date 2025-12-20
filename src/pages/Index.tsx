@@ -561,7 +561,7 @@ const Index = () => {
                 How much does a professional website cost?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">A professional business website typically starts at a base rate, depending on complexity and features. Simple portfolio or one-page sites are more affordable, while custom functionality like e-commerce, booking systems, or member areas will affect the price. I always provide clear pricing based on your specific goals before any work begins.</p>
+                <p className="mb-3">A professional business website typically starts at a base rate, depending on complexity and features. Simple portfolio or one-page sites are more affordable, while custom functionality like e-commerce, booking systems, or member areas will affect the price. We always provide clear pricing based on your specific goals before any work begins.</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -570,7 +570,7 @@ const Index = () => {
                 How long does it take to build a website?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">Most business websites are designed, developed, and launched within 2–4 weeks once all content (text, images, logos) is ready. More advanced platforms or functionality can extend timelines, but I will share a realistic schedule with milestones so you always know what to expect.</p>
+                <p className="mb-3">Most business websites are designed, developed, and launched within 2–4 weeks once all content (text, images, logos) is ready. More advanced platforms or functionality can extend timelines, but we will share a realistic schedule with milestones so you always know what to expect.</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -579,7 +579,7 @@ const Index = () => {
                 What do you need from me to get started?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">To begin, I need your business details, branding assets (logo, colors), page content, and any examples of styles you like. You do not need to know technical details — I guide you through every step.</p>
+                <p className="mb-3">To begin, We need your business details, branding assets (logo, colors), page content, and any examples of styles you like. You do not need to know technical details — We guide you through every step.</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -588,7 +588,7 @@ const Index = () => {
                 Will my website work on mobile devices and search engines?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">Yes. Every site I build is fully responsive, meaning it adapts perfectly to phones, tablets, and desktops. I also use best practices (proper tags, meta descriptions, and structured content) so your site can be indexed and found on search engines like Google.</p>
+                <p className="mb-3">Yes. Every site we build is fully responsive, meaning it adapts perfectly to phones, tablets, and desktops. We also use best practices (proper tags, meta descriptions, and structured content) so your site can be indexed and found on search engines like Google.</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -597,7 +597,7 @@ const Index = () => {
                 What happens after the site is launched?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">After launch, I provide support to fix bugs, connect your domain, and make sure everything is live and working. I also offer ongoing care plans for updates, maintenance, and content changes if needed.</p>
+                <p className="mb-3">After launch, We provide support to fix bugs, connect your domain, and make sure everything is live and working. We also offer ongoing care plans for updates, maintenance, and content changes if needed.</p>
               </AccordionContent>
             </AccordionItem>
 
@@ -606,7 +606,7 @@ const Index = () => {
                 Can I update my own website after launch?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 pb-5">
-                <p className="mb-3">Yes. I build your site so you can make simple edits yourself if you choose. I can also walk you through how to update text, images, or add new pages without needing technical skills.</p>
+                <p className="mb-3">Yes. We build your site so you can make simple edits yourself if you choose. We can also walk you through how to update text, images, or add new pages without needing technical skills.</p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
